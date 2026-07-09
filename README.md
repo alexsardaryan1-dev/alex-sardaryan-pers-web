@@ -17,18 +17,19 @@ Visit the website: https://alexsardaryan1-dev.github.io/alex-sardaryan-pers-webs
 - HTML5
 - CSS3
 - JavaScript ES6+
+- React
+- Node.js
+- Express.js
+- Tailwind CSS
+- PostgreSQL
 
 ## About
 
 Full Stack Developer from Yerevan, Armenia. I build responsive, production-ready
-web applications with React.js, Node.js, and MySQL. Clean code. Real impact.
+web applications with React.js, Node.js, and PostgreSQL. Clean code. Real impact.
 
-**Skills:** React.js, Node.js, Express.js, MySQL, JavaScript, HTML5, CSS3, Tailwind CSS
-
-## Links
+## Nets
 
 - **LinkedIn:** [alex-sardaryan-34b623398](https://linkedin.com/in/alex-sardaryan-34b623398)
 - **Email:** alexsardaryan1dev@gmail.com
 ---
-
-**© 2026 ALEX SARDARYAN**
