@@ -38,7 +38,7 @@ alex-sardaryan-pers-web/
 ├── js/
 │   └── main.js                # Scroll UI, mobile menu, cursor trail, dark mode
 ├── .gitignore
-├── Alex_Sardaryan_CV.pdf       # Downloadable CV linked from the hero section
+├── Alex_Sardaryan_Full_Stack_developer_CV.pdf       # Downloadable CV linked from the hero section
 ├── index.html                  # All page markup and content
 └── README.md
 ```
