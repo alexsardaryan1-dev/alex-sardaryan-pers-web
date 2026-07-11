@@ -35,8 +35,13 @@ body {
   height: 100%;
   letter-spacing: 0.05em;
   line-height: 1.5;
-  cursor: none;
   transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+@media (pointer: fine) {
+  body.js-cursor-ready {
+    cursor: none;
+  }
 }
 
 nav,
@@ -58,6 +63,28 @@ section,
 body.light-mode {
   background-color: var(--lm-green);
   --pulse-color: var(--lm-gold);
+}
+
+/* ─── FOCUS STYLES ─── */
+
+a:focus-visible,
+button:focus-visible,
+.dot:focus-visible,
+.skill-card:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+body.light-mode a:focus-visible,
+body.light-mode button:focus-visible,
+body.light-mode .dot:focus-visible,
+body.light-mode .skill-card:focus-visible,
+body.light-mode input:focus-visible,
+body.light-mode textarea:focus-visible {
+  outline-color: var(--lm-gold);
 }
 
 /* ─── SCROLLBAR ─── */
@@ -339,6 +366,9 @@ body.light-mode .scrollup-btn:hover {
   gap: 5px;
   cursor: pointer;
   z-index: 200;
+  background: none;
+  border: none;
+  padding: 4px;
 }
 
 .menu-burger span {
@@ -440,6 +470,8 @@ body.light-mode .mobile-menuBurger ul a:hover {
   background: var(--brighter-dark);
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
+  padding: 0;
 }
 
 body.light-mode .dot {
@@ -1460,6 +1492,28 @@ body.light-mode .cursor {
 
 body.light-mode .cursor-tale {
   background: var(--lm-white);
+}
+
+/* ─── REDUCED MOTION ─── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+
+  .cursor,
+  .cursor-tale {
+    display: none;
+  }
 }
 
 /* ─── RESPONSIVE DESIGN ─── */
